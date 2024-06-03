@@ -1,0 +1,21 @@
+name: Deploy to ArgoCD
+
+on:
+  workflow_run:
+    workflows: ["Build and Push Docker Image"]
+    types:
+      - completed
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Deploy to ArgoCD
+      run: |
+        kubectl apply -f argocd-app.yaml
+      env:
+        KUBECONFIG: ${{ secrets.KUBECONFIG }}
