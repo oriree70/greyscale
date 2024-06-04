@@ -14,10 +14,10 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v2
 
-    - name: Deploy to ArgoCD
+    - name: Deploy to K8s
       run: |
 
-        cd https://github.com/oriree70/greyscale.git/greyscale.yaml
+        cd h/home/ubuntu/greyscale/argoGrey/greyscale.yaml
         kubectl apply -f greyscale.yaml
       env:
         KUBECONFIG: ${{ secrets.KUBECONFIG }}
