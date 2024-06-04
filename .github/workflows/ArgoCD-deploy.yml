@@ -1,4 +1,4 @@
-name: Deploy to ArgoCD
+name: Deploy to K8s
 
 on:
   workflow_run:
@@ -17,7 +17,7 @@ jobs:
     - name: Deploy to K8s
       run: |
 
-        cd h/home/ubuntu/greyscale/argoGrey/greyscale.yaml
+        cd /home/ubuntu/greyscale/argoGrey/greyscale.yaml
         kubectl apply -f greyscale.yaml
       env:
         KUBECONFIG: ${{ secrets.KUBECONFIG }}
