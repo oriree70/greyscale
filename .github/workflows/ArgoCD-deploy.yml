@@ -18,6 +18,6 @@ jobs:
       run: |
 
         curl -OL https://raw.githubusercontent.com/oriree70/greyscale/main/greyscale.yaml
-        kubectl apply -f greyscale.yaml
+        kubectl apply -f greyscale.yaml --validate=false
       env:
         KUBECONFIG: ${{ secrets.KUBECONFIG }}
