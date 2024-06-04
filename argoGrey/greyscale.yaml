@@ -13,7 +13,7 @@ spec:
     spec:
       containers:
       - name: greyscale
-        image: oriree70/greyscale:1
+        image: ${{ secrets.DOCKER_USERNAME }}/greyscale:1
         resources:
           limits:
             memory: "128Mi"
