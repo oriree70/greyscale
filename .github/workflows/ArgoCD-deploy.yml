@@ -16,6 +16,8 @@ jobs:
 
     - name: Deploy to ArgoCD
       run: |
+
+        cd https://github.com/oriree70/greyscale.git/greyscale.yaml
         kubectl apply -f greyscale.yaml
       env:
         KUBECONFIG: ${{ secrets.KUBECONFIG }}
