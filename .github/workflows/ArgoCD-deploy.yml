@@ -1,4 +1,4 @@
-name: Deploy to ArgoCD
+name: Deploy to K8s
 
 on:
   workflow_run:
@@ -14,8 +14,10 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v2
 
-    - name: Deploy to ArgoCD
+    - name: Deploy to K8s
       run: |
-        kubectl apply -f argocd-app.yaml
+
+        curl -OL https://raw.githubusercontent.com/oriree70/greyscale/main/greyscale.yaml
+        kubectl apply -f greyscale.yaml --validate=false
       env:
         KUBECONFIG: ${{ secrets.KUBECONFIG }}
