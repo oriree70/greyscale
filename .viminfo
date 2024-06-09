@@ -12,7 +12,11 @@
 ~h
 # Command Line History (newest to oldest):
 :wq
-|2,0,1717530668,,"wq"
+|2,0,1717959839,,"wq"
+:se nu
+|2,0,1717959810,,"se nu"
+:q
+|2,0,1717959757,,"q"
 
 # Search String History (newest to oldest):
 
@@ -52,38 +56,154 @@
 |3,0,9,1,1,0,1717530659,"    automated:"
 
 # File marks:
-'0  24  0  ~/argo-app.yaml
-|4,48,24,0,1717530668,"~/argo-app.yaml"
-'1  1  18  ~/argo-app.yaml
-|4,49,1,18,1717529915,"~/argo-app.yaml"
-'2  5  18  ~/argo-app.yaml
-|4,50,5,18,1717529915,"~/argo-app.yaml"
-'3  1  27  ~/argo-app.yaml
-|4,51,1,27,1717529539,"~/argo-app.yaml"
-'4  1  27  ~/argo-app.yaml
-|4,52,1,27,1717529539,"~/argo-app.yaml"
-'5  22  27  ~/argo-app.yaml
-|4,53,22,27,1717529539,"~/argo-app.yaml"
-'6  22  27  ~/argo-app.yaml
-|4,54,22,27,1717529539,"~/argo-app.yaml"
-'7  21  40  ~/argocd-server.yaml
-|4,55,21,40,1717528463,"~/argocd-server.yaml"
+'0  4  0  ~/.gitconfig
+|4,48,4,0,1717959839,"~/.gitconfig"
+'1  2  15  ~/.gitconfig
+|4,49,2,15,1717959757,"~/.gitconfig"
+'2  3  15  ~/.gitconfig
+|4,50,3,15,1717959757,"~/.gitconfig"
+'3  2  15  ~/.gitconfig
+|4,51,2,15,1717959727,"~/.gitconfig"
+'4  3  15  ~/.gitconfig
+|4,52,3,15,1717959727,"~/.gitconfig"
+'5  24  0  ~/argo-app.yaml
+|4,53,24,0,1717530668,"~/argo-app.yaml"
+'6  1  18  ~/argo-app.yaml
+|4,54,1,18,1717529915,"~/argo-app.yaml"
+'7  5  18  ~/argo-app.yaml
+|4,55,5,18,1717529915,"~/argo-app.yaml"
+'8  1  27  ~/argo-app.yaml
+|4,56,1,27,1717529539,"~/argo-app.yaml"
+'9  1  27  ~/argo-app.yaml
+|4,57,1,27,1717529539,"~/argo-app.yaml"
 
 # Jumplist (newest first):
+-'  4  0  ~/.gitconfig
+|4,39,4,0,1717959839,"~/.gitconfig"
+-'  2  15  ~/.gitconfig
+|4,39,2,15,1717959806,"~/.gitconfig"
+-'  3  15  ~/.gitconfig
+|4,39,3,15,1717959757,"~/.gitconfig"
+-'  3  15  ~/.gitconfig
+|4,39,3,15,1717959727,"~/.gitconfig"
+-'  1  0  ~/.gitconfig
+|4,39,1,0,1717959697,"~/.gitconfig"
+-'  1  0  ~/.gitconfig
+|4,39,1,0,1717959697,"~/.gitconfig"
+-'  1  0  ~/.gitconfig
+|4,39,1,0,1717959697,"~/.gitconfig"
+-'  24  0  ~/argo-app.yaml
+|4,39,24,0,1717530668,"~/argo-app.yaml"
+-'  24  0  ~/argo-app.yaml
+|4,39,24,0,1717530668,"~/argo-app.yaml"
+-'  24  0  ~/argo-app.yaml
+|4,39,24,0,1717530668,"~/argo-app.yaml"
+-'  24  0  ~/argo-app.yaml
+|4,39,24,0,1717530668,"~/argo-app.yaml"
+-'  24  0  ~/argo-app.yaml
+|4,39,24,0,1717530668,"~/argo-app.yaml"
+-'  24  0  ~/argo-app.yaml
+|4,39,24,0,1717530668,"~/argo-app.yaml"
+-'  24  0  ~/argo-app.yaml
+|4,39,24,0,1717530668,"~/argo-app.yaml"
 -'  24  0  ~/argo-app.yaml
 |4,39,24,0,1717530668,"~/argo-app.yaml"
 -'  1  18  ~/argo-app.yaml
 |4,39,1,18,1717530654,"~/argo-app.yaml"
+-'  1  18  ~/argo-app.yaml
+|4,39,1,18,1717530654,"~/argo-app.yaml"
+-'  1  18  ~/argo-app.yaml
+|4,39,1,18,1717530654,"~/argo-app.yaml"
+-'  1  18  ~/argo-app.yaml
+|4,39,1,18,1717530654,"~/argo-app.yaml"
+-'  1  18  ~/argo-app.yaml
+|4,39,1,18,1717530654,"~/argo-app.yaml"
+-'  1  18  ~/argo-app.yaml
+|4,39,1,18,1717530654,"~/argo-app.yaml"
+-'  1  18  ~/argo-app.yaml
+|4,39,1,18,1717530654,"~/argo-app.yaml"
+-'  1  18  ~/argo-app.yaml
+|4,39,1,18,1717530654,"~/argo-app.yaml"
+-'  5  18  ~/argo-app.yaml
+|4,39,5,18,1717529915,"~/argo-app.yaml"
+-'  5  18  ~/argo-app.yaml
+|4,39,5,18,1717529915,"~/argo-app.yaml"
+-'  5  18  ~/argo-app.yaml
+|4,39,5,18,1717529915,"~/argo-app.yaml"
+-'  5  18  ~/argo-app.yaml
+|4,39,5,18,1717529915,"~/argo-app.yaml"
+-'  5  18  ~/argo-app.yaml
+|4,39,5,18,1717529915,"~/argo-app.yaml"
+-'  5  18  ~/argo-app.yaml
+|4,39,5,18,1717529915,"~/argo-app.yaml"
+-'  5  18  ~/argo-app.yaml
+|4,39,5,18,1717529915,"~/argo-app.yaml"
 -'  5  18  ~/argo-app.yaml
 |4,39,5,18,1717529915,"~/argo-app.yaml"
 -'  22  27  ~/argo-app.yaml
 |4,39,22,27,1717529889,"~/argo-app.yaml"
+-'  22  27  ~/argo-app.yaml
+|4,39,22,27,1717529889,"~/argo-app.yaml"
+-'  22  27  ~/argo-app.yaml
+|4,39,22,27,1717529889,"~/argo-app.yaml"
+-'  22  27  ~/argo-app.yaml
+|4,39,22,27,1717529889,"~/argo-app.yaml"
+-'  22  27  ~/argo-app.yaml
+|4,39,22,27,1717529889,"~/argo-app.yaml"
+-'  22  27  ~/argo-app.yaml
+|4,39,22,27,1717529889,"~/argo-app.yaml"
+-'  22  27  ~/argo-app.yaml
+|4,39,22,27,1717529889,"~/argo-app.yaml"
+-'  22  27  ~/argo-app.yaml
+|4,39,22,27,1717529889,"~/argo-app.yaml"
+-'  22  27  ~/argo-app.yaml
+|4,39,22,27,1717529539,"~/argo-app.yaml"
+-'  22  27  ~/argo-app.yaml
+|4,39,22,27,1717529539,"~/argo-app.yaml"
+-'  22  27  ~/argo-app.yaml
+|4,39,22,27,1717529539,"~/argo-app.yaml"
+-'  22  27  ~/argo-app.yaml
+|4,39,22,27,1717529539,"~/argo-app.yaml"
+-'  22  27  ~/argo-app.yaml
+|4,39,22,27,1717529539,"~/argo-app.yaml"
+-'  22  27  ~/argo-app.yaml
+|4,39,22,27,1717529539,"~/argo-app.yaml"
+-'  22  27  ~/argo-app.yaml
+|4,39,22,27,1717529539,"~/argo-app.yaml"
 -'  22  27  ~/argo-app.yaml
 |4,39,22,27,1717529539,"~/argo-app.yaml"
 -'  1  0  ~/argo-app.yaml
 |4,39,1,0,1717529532,"~/argo-app.yaml"
 -'  1  0  ~/argo-app.yaml
 |4,39,1,0,1717529532,"~/argo-app.yaml"
+-'  1  0  ~/argo-app.yaml
+|4,39,1,0,1717529532,"~/argo-app.yaml"
+-'  1  0  ~/argo-app.yaml
+|4,39,1,0,1717529532,"~/argo-app.yaml"
+-'  1  0  ~/argo-app.yaml
+|4,39,1,0,1717529532,"~/argo-app.yaml"
+-'  1  0  ~/argo-app.yaml
+|4,39,1,0,1717529532,"~/argo-app.yaml"
+-'  1  0  ~/argo-app.yaml
+|4,39,1,0,1717529532,"~/argo-app.yaml"
+-'  1  0  ~/argo-app.yaml
+|4,39,1,0,1717529532,"~/argo-app.yaml"
+-'  1  0  ~/argo-app.yaml
+|4,39,1,0,1717529532,"~/argo-app.yaml"
+-'  1  0  ~/argo-app.yaml
+|4,39,1,0,1717529532,"~/argo-app.yaml"
+-'  1  0  ~/argo-app.yaml
+|4,39,1,0,1717529532,"~/argo-app.yaml"
+-'  1  0  ~/argo-app.yaml
+|4,39,1,0,1717529532,"~/argo-app.yaml"
+-'  1  0  ~/argo-app.yaml
+|4,39,1,0,1717529532,"~/argo-app.yaml"
+-'  1  0  ~/argo-app.yaml
+|4,39,1,0,1717529532,"~/argo-app.yaml"
+-'  1  0  ~/argo-app.yaml
+|4,39,1,0,1717529532,"~/argo-app.yaml"
+-'  1  0  ~/argo-app.yaml
+|4,39,1,0,1717529532,"~/argo-app.yaml"
 -'  21  40  ~/argocd-server.yaml
 |4,39,21,40,1717528463,"~/argocd-server.yaml"
 -'  21  40  ~/argocd-server.yaml
@@ -100,24 +220,76 @@
 |4,39,21,40,1717528463,"~/argocd-server.yaml"
 -'  21  40  ~/argocd-server.yaml
 |4,39,21,40,1717528463,"~/argocd-server.yaml"
--'  1  0  ~/argocd-server.yaml
-|4,39,1,0,1717528456,"~/argocd-server.yaml"
--'  1  0  ~/argocd-server.yaml
-|4,39,1,0,1717528456,"~/argocd-server.yaml"
--'  1  0  ~/argocd-server.yaml
-|4,39,1,0,1717528456,"~/argocd-server.yaml"
--'  1  0  ~/argocd-server.yaml
-|4,39,1,0,1717528456,"~/argocd-server.yaml"
--'  1  0  ~/argocd-server.yaml
-|4,39,1,0,1717528456,"~/argocd-server.yaml"
--'  1  0  ~/argocd-server.yaml
-|4,39,1,0,1717528456,"~/argocd-server.yaml"
--'  1  0  ~/argocd-server.yaml
-|4,39,1,0,1717528456,"~/argocd-server.yaml"
--'  1  0  ~/argocd-server.yaml
-|4,39,1,0,1717528456,"~/argocd-server.yaml"
+-'  21  40  ~/argocd-server.yaml
+|4,39,21,40,1717528463,"~/argocd-server.yaml"
+-'  21  40  ~/argocd-server.yaml
+|4,39,21,40,1717528463,"~/argocd-server.yaml"
+-'  21  40  ~/argocd-server.yaml
+|4,39,21,40,1717528463,"~/argocd-server.yaml"
+-'  21  40  ~/argocd-server.yaml
+|4,39,21,40,1717528463,"~/argocd-server.yaml"
+-'  21  40  ~/argocd-server.yaml
+|4,39,21,40,1717528463,"~/argocd-server.yaml"
+-'  21  40  ~/argocd-server.yaml
+|4,39,21,40,1717528463,"~/argocd-server.yaml"
+-'  21  40  ~/argocd-server.yaml
+|4,39,21,40,1717528463,"~/argocd-server.yaml"
+-'  21  40  ~/argocd-server.yaml
+|4,39,21,40,1717528463,"~/argocd-server.yaml"
+-'  21  40  ~/argocd-server.yaml
+|4,39,21,40,1717528463,"~/argocd-server.yaml"
+-'  21  40  ~/argocd-server.yaml
+|4,39,21,40,1717528463,"~/argocd-server.yaml"
+-'  21  40  ~/argocd-server.yaml
+|4,39,21,40,1717528463,"~/argocd-server.yaml"
+-'  21  40  ~/argocd-server.yaml
+|4,39,21,40,1717528463,"~/argocd-server.yaml"
+-'  21  40  ~/argocd-server.yaml
+|4,39,21,40,1717528463,"~/argocd-server.yaml"
+-'  21  40  ~/argocd-server.yaml
+|4,39,21,40,1717528463,"~/argocd-server.yaml"
+-'  21  40  ~/argocd-server.yaml
+|4,39,21,40,1717528463,"~/argocd-server.yaml"
+-'  21  40  ~/argocd-server.yaml
+|4,39,21,40,1717528463,"~/argocd-server.yaml"
+-'  21  40  ~/argocd-server.yaml
+|4,39,21,40,1717528463,"~/argocd-server.yaml"
+-'  21  40  ~/argocd-server.yaml
+|4,39,21,40,1717528463,"~/argocd-server.yaml"
+-'  21  40  ~/argocd-server.yaml
+|4,39,21,40,1717528463,"~/argocd-server.yaml"
+-'  21  40  ~/argocd-server.yaml
+|4,39,21,40,1717528463,"~/argocd-server.yaml"
+-'  21  40  ~/argocd-server.yaml
+|4,39,21,40,1717528463,"~/argocd-server.yaml"
+-'  21  40  ~/argocd-server.yaml
+|4,39,21,40,1717528463,"~/argocd-server.yaml"
+-'  21  40  ~/argocd-server.yaml
+|4,39,21,40,1717528463,"~/argocd-server.yaml"
+-'  21  40  ~/argocd-server.yaml
+|4,39,21,40,1717528463,"~/argocd-server.yaml"
+-'  21  40  ~/argocd-server.yaml
+|4,39,21,40,1717528463,"~/argocd-server.yaml"
+-'  21  40  ~/argocd-server.yaml
+|4,39,21,40,1717528463,"~/argocd-server.yaml"
+-'  21  40  ~/argocd-server.yaml
+|4,39,21,40,1717528463,"~/argocd-server.yaml"
+-'  21  40  ~/argocd-server.yaml
+|4,39,21,40,1717528463,"~/argocd-server.yaml"
+-'  21  40  ~/argocd-server.yaml
+|4,39,21,40,1717528463,"~/argocd-server.yaml"
 
 # History of marks within files (newest to oldest):
+
+> ~/.gitconfig
+	*	1717959837	0
+	"	4	0
+	^	4	0
+	.	4	0
+	+	2	15
+	+	2	0
+	+	7	0
+	+	4	0
 
 > ~/argo-app.yaml
 	*	1717530665	0
