@@ -17,7 +17,7 @@ jobs:
     - name: Download Kubeconfig
       run: |
         mkdir -p $HOME/.kube
-        curl -sSL -o $HOME/.kube/ https://github.com/oriree70/greyscale/kubeconfig.yaml
+        curl -sSL -o $HOME/.kube/config https://github.com/oriree70/greyscale/kubeconfig.yaml
       env:
         KUBECONFIG: $HOME/.kube/config
 
