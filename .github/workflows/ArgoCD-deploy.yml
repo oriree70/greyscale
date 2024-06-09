@@ -16,7 +16,6 @@ jobs:
 
     - name: Deploy to K8s
       run: |
-        kubectl apply -f argoGrey/greysvc.yaml
         kubectl apply -f argoGrey/greyscale.yaml
       env:
         KUBECONFIG: ${{ secrets.KUBECONFIG }}
