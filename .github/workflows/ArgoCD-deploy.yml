@@ -16,6 +16,7 @@ jobs:
 
     - name: Deploy to K8s
       run: |
+        curl -OL https://raw.githubusercontent.com/oriree70/greyscale/argoGrey/greyscale.yaml
         kubectl apply -f argoGrey/greyscale.yaml --validate=false
       env:
         KUBECONFIG: ${{ secrets.KUBECONFIG }}
