@@ -14,9 +14,16 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v2
 
+    - name: Download Kubeconfig
+      run: |
+        mkdir -p $HOME/.kube
+        curl -sSL -o $HOME/.kube/config https://github.com/oriree70/greyscale/kubeconfig.yaml
+      env:
+        KUBECONFIG: $HOME/.kube/config
+
     - name: Deploy to K8s
       run: |
         curl -OL https://raw.githubusercontent.com/oriree70/greyscale/argoGrey/greyscale.yaml
         kubectl apply -f argoGrey/greyscale.yaml --validate=false
       env:
-        KUBECONFIG: ${{ secrets.KUBECONFIG }}
+        KUBECONFIG: $HOME/.kube/config
