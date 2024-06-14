@@ -1,29 +1,46 @@
-name: Deploy to K8s
+name: Deploy to Kubernetes
 
 on:
-  workflow_run:
-    workflows: ["Build and Push Docker Image"]
-    types:
-      - completed
+  push:
+    branches:
+      - main
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v2
+      - name: Checkout code
+        uses: actions/checkout@v2
 
-    - name: Download Kubeconfig
-      run: |
-        mkdir -p $HOME/.kube
-        curl -sSL -o $HOME/.kube/config https://github.com/oriree70/greyscale/kubeconfig.yaml
-      env:
-        KUBECONFIG: $HOME/.kube/config
+      - name: Set up kubectl
+        uses: setup-kubectl@v1
+        with:
+          version: v1.20.0
 
-    - name: Deploy to K8s
-      run: |
-        curl -OL https://raw.githubusercontent.com/oriree70/greyscale/argoGrey/greyscale.yaml
-        kubectl apply -f argoGrey/greyscale.yaml --validate=false
-      env:
-        KUBECONFIG: $HOME/.kube/config
+      - name: Authenticate to cluster
+        env:
+          K8S_TOKEN: ${{ secrets.K8S_TOKEN }}
+        run: |
+          kubectl config set-cluster my-cluster --server=https://172.31.47.10:6443
+          kubectl config set-credentials github-actions --token=$K8S_TOKEN
+          kubectl config set-context my-cluster --cluster=my-cluster --user=github-actions
+          kubectl config use-context my-cluster
+
+      - name: Deploy to Kubernetes
+        run: |
+          kubectl apply -f argoGrey/greyscale.yaml --validate=false
+
+
+
+
+
+
+
+
+
+
+
+
+
+
