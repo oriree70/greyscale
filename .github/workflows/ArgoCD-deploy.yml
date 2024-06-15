@@ -34,8 +34,7 @@ jobs:
 
       - name: Deploy to Kubernetes
         run: |
-          kubectl apply -f argoGrey/greyscale.yaml --validate=false
-
+          kubectl apply -f argoGrey/greyscale.yaml 
       - name: Get Pods
         run: |
           kubectl get pods
