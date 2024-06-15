@@ -1,4 +1,3 @@
-
 name: Deploy to Kubernetes
 
 on:
@@ -23,14 +22,20 @@ jobs:
         env:
           K8S_TOKEN: ${{ secrets.K8S_TOKEN }}
         run: |
-          kubectl config set-cluster my-cluster --server=https://172.31.35.14:6443
+          kubectl config set-cluster my-cluster --server=https://172.31.35.14:6443 --insecure-skip-tls-verify=true
           kubectl config set-credentials github-actions --token=$K8S_TOKEN
           kubectl config set-context my-cluster --cluster=my-cluster --user=github-actions
           kubectl config use-context my-cluster
 
+      - name: Debug Kubernetes Connection
+        run: |
+          kubectl get nodes
+          kubectl cluster-info
+          
       - name: Deploy to Kubernetes
         run: |
           kubectl apply -f argoGrey/greyscale.yaml --validate=false
+
 
 
 
