@@ -14,27 +14,16 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
 
-      - name: Set up kubectl
-        uses: setup-kubectl@v1
-        with:
-          version: v1.20.0
-
-      - name: Authenticate to cluster
+      - name: Deploy to Kubernetes
         env:
+          KUBECONFIG: ${{ github.workspace }}/path/to/your/kubeconfig
           K8S_TOKEN: ${{ secrets.K8S_TOKEN }}
         run: |
           kubectl config set-cluster my-cluster --server=https://172.31.47.10:6443
           kubectl config set-credentials github-actions --token=$K8S_TOKEN
           kubectl config set-context my-cluster --cluster=my-cluster --user=github-actions
           kubectl config use-context my-cluster
-
-      - name: Deploy to Kubernetes
-        run: |
           kubectl apply -f argoGrey/greyscale.yaml --validate=false
-
-
-
-
 
 
 
