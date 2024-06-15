@@ -36,6 +36,11 @@ jobs:
         run: |
           kubectl apply -f argoGrey/greyscale.yaml --validate=false
 
+      - name: Get Pods
+        run: |
+          kubectl get pods
+        
+
 
 
 
