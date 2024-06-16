@@ -37,7 +37,7 @@ jobs:
 
       - name: Check Deployment Status
         run: |
-          kubectl rollout status deployment/my-deployment
+          kubectl rollout status deployment/greyscale
 
 
 
