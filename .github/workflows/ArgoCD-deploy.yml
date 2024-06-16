@@ -14,9 +14,8 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
 
-      - name: Install kubectl
-        run: |
-          sudo apt-get update && sudo apt-get install -y kubectl
+      - name: Set up kubectl
+        uses: docker://bitnami/kubectl:latest
 
       - name: Authenticate to cluster
         env:
@@ -34,14 +33,11 @@ jobs:
 
       - name: Deploy to Kubernetes
         run: |
-          kubectl apply -f argoGrey/greyscale.yaml 
-      - name: Get Pods
+          kubectl apply -f argoGrey/greyscale.yaml --validate=false
+
+      - name: Check Deployment Status
         run: |
-          kubectl get pods
-      - name: Get SVC
-        run: |
-          kubectl get svc -o wide
-        
+          kubectl rollout status deployment/my-deployment
 
 
 
