@@ -21,7 +21,7 @@ jobs:
         env:
           K8S_TOKEN: ${{ secrets.K8S_TOKEN }}
         run: |
-          kubectl config set-cluster my-cluster --server=https://172.31.32.46:6443 --insecure-skip-tls-verify=true
+          kubectl config set-cluster my-cluster --server=https://3.85.147.195:6443 --insecure-skip-tls-verify=true
           kubectl config set-credentials github-actions --token=$K8S_TOKEN
           kubectl config set-context my-cluster --cluster=my-cluster --user=github-actions
           kubectl config use-context my-cluster
